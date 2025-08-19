@@ -84,3 +84,4 @@ D:\My projects\2025\LAUGFS Test\EmployeeApp\EmployeeApp\EmployeeApp\obj\Debug\ne
 D:\My projects\2025\LAUGFS Test\EmployeeApp\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.pdb
 D:\My projects\2025\LAUGFS Test\EmployeeApp\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.genruntimeconfig.cache
 D:\My projects\2025\LAUGFS Test\EmployeeApp\EmployeeApp\EmployeeApp\obj\Debug\net8.0\ref\EmployeeApp.dll
+D:\My projects\2025\LAUGFS Test\EmployeeApp\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.sourcelink.json
