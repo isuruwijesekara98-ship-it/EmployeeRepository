@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Create / Edit Page";
+}
+ @model EmployeeApp.Models.Employee
+
+<div class="text-center">
+    <h1 class="display-4">Create or edit an employee</h1>
+</div>
+
+<form asp-action="CreateEditEmployeeForm" asp-controller="Employee">
+    <input hidden class="form-control" type="number" placeholder="0" asp-for="Id" />
+
+    <label>Name</label>
+    <input class="form-control" type="text" placeholder="0" asp-for="Name" />
+
+    <label>Salary $</label>
+    <input class="form-control" type="number" placeholder="Add a description" asp-for="Salary" />
+
+    <label>Designation</label>
+    <input class="form-control" type="text" placeholder="0" asp-for="Position" />
+
+    <button class="btn btn-primary mt-4" type="submit">Ok</button>
+</form>

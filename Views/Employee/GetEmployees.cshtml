@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Employee Page";
+}
+
+@model List<EmployeeApp.Models.Employee>   
+
+@{
+    ViewData["Title"] = "Employee Overview";
+}
+
+<h2>Employee Overview</h2>
+
+<a asp-controller="Employee" asp-action="CreateEditEmployee" class="btn btn-primary">Create New</a>
+<br>
+<br>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.Name</td>
+                    <td>@emp.Position</td>
+                    <td>@emp.Salary?.ToString("N2")</td>
+                    <td>
+                        <a asp-action="CreateEditEmployee" asp-route-id="@emp.Id" class="btn btn-secondary">Edit</a>
+                        <a asp-action="DeleteEmployee" asp-route-id="@emp.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-center">No employees found</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
